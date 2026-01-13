@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>⏱ Task-Focus Timer</h1>
+
+    <div class="timer-display" id="timer">25:00</div>
+
+    <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="settings">
+        <label>Work (minutes): <input type="number" id="workMinutes" value="25"></label>
+        <label>Break (minutes): <input type="number" id="breakMinutes" value="5"></label>
+        <button onclick="updateSettings()">Set</button>
+    </div>
+</div>
+
+<audio id="alarmSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
